@@ -480,7 +480,8 @@ ggsave('../figs/PredictorsFigure_Both_withlabels.png',
 plot_grid(plot_grid( YearEffect_Size_Plot_nolabels +
                        guides( col = 'none'),
                      TempEffect_RedList_Plot_nolabels+
-                       guides( col = 'none', shape = 'none') ),
+                       guides( col = 'none', shape = 'none'),
+                     labels = c('a)', 'b)') ),
           get_legend(YearEffect_Size_Plot_nolabels ),
           ncol=1 , rel_heights = c(5,1))
 
